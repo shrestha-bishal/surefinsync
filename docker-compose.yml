@@ -1,0 +1,9 @@
+services:
+  surefinsync:
+    build: .
+    container_name: surefinsync
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    tty: true
